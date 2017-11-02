@@ -26,7 +26,6 @@ class ResultController @Inject()(cache: SyncCacheApi, cc: ControllerComponents) 
         cache.set(Config.DATABASE_NAME, database ++ result, Duration.Inf)
         Ok(Json.obj("status" -> "Result successfully added to database"))
 
-      // TODO detailed error msg
       case None =>
         BadRequest(Json.obj("status" -> "Error while deserializing json"))
     }
@@ -42,6 +41,18 @@ class ResultController @Inject()(cache: SyncCacheApi, cc: ControllerComponents) 
       case Some(result) => Some(Set(result))
       case None         => json.asOpt[Set[Result]]
     }
+  }
+
+
+  /**
+    * Route for GET request
+    * /result
+    * @return Json array of result
+    */
+  def getResult = Action {
+    val database: Set[Result] = cache.get(Config.DATABASE_NAME).getOrElse(Set())
+
+    Ok(Json.toJson(database))
   }
 
 

@@ -1,0 +1,112 @@
+[
+    {
+	"msg_type": "inr_simple",
+	"correspondent": {
+	    "idCorrespondent": "Correspondent1",
+	    "profil": "ide",
+	    "firstName": "Erlich",
+	    "lastName": "Bachman",
+	    "mobile": "0633471153"
+	},
+	"patient": {
+	    "idPatient": "92010201867",
+	    "firstName": "Richard",
+	    "lastName": "Hendricks",
+	    "birthdayDate": "01-06-1986"
+	},
+	"result": {
+	    "idResult": "B71012P6823-PUIMA-/INRW",
+	    "dateOfResult": 1507884006000,
+	    "msg_type": "inr_simple",
+	    "msg_raw": "Pvt 12/10/2017 à 10:00:00\nDossier 525648-P-6823\nINR: 2.6 \n Laboratoire Silicon Valley"
+	}
+    },
+    {
+	"msg_type": "inr_simple",
+	"correspondent": {
+	    "idCorrespondent": "Correspondent2",
+	    "profil": "ide",
+	    "firstName": "Erlich2",
+	    "lastName": "Bachman2",
+	    "mobile": "0633652374"
+	},
+	"patient": {
+	    "idPatient": "1234564567",
+	    "firstName": "Richard2",
+	    "lastName": "Hendricks2",
+	    "birthdayDate": "01-06-1986"
+	},
+	"result": {
+	    "idResult": "B71012P6823-PUIMA-/INRW",
+	    "dateOfResult": 1507884006000,
+	    "msg_type": "inr_simple",
+	    "msg_raw": "Pvt 12/10/2017 à 10:00:00\nDossier 525648-P-6823\nINR: 2.6 \n Laboratoire Silicon Valley"
+	}
+    },
+    {
+	"msg_type": "inr_simple",
+	"correspondent": {
+	    "idCorrespondent": "Correspondent3",
+	    "profil": "ide",
+	    "firstName": "Erlich3",
+	    "lastName": "Bachman3",
+	    "mobile": "0633627521"
+	},
+	"patient": {
+	    "idPatient": "1234565432",
+	    "firstName": "Richard3",
+	    "lastName": "Hendricks3",
+	    "birthdayDate": "01-06-1986"
+	},
+	"result": {
+	    "idResult": "B71012P6823-PUIMA-/INRW",
+	    "dateOfResult": 1507884006000,
+	    "msg_type": "inr_simple",
+	    "msg_raw": "Pvt 12/10/2017 à 10:00:00\nDossier 525648-P-6823\nINR: 2.6 \n Laboratoire Silicon Valley"
+	}
+    },
+    {
+	"msg_type": "inr_simple",
+	"correspondent": {
+	    "idCorrespondent": "Correspondent1",
+	    "profil": "ide",
+	    "firstName": "Erlich",
+	    "lastName": "Bachman",
+	    "mobile": "0633471153"
+	},
+	"patient": {
+	    "idPatient": "237123574562",
+	    "firstName": "Richard4",
+	    "lastName": "Hendricks4",
+	    "birthdayDate": "01-06-1986"
+	},
+	"result": {
+	    "idResult": "B71012P6823-PUIMA-/INRW",
+	    "dateOfResult": 1507884006000,
+	    "msg_type": "inr_simple",
+	    "msg_raw": "Pvt 12/10/2017 à 10:00:00\nDossier 525648-P-6823\nINR: 2.6 \n Laboratoire Silicon Valley"
+	}
+    },
+    {
+	"msg_type": "inr_simple2",
+	"correspondent": {
+	    "idCorrespondent": "Correspondent1",
+	    "profil": "ide",
+	    "firstName": "Erlich",
+	    "lastName": "Bachman",
+	    "mobile": "0633471153"
+	},
+	"patient": {
+	    "idPatient": "92010201867",
+	    "firstName": "Richard",
+	    "lastName": "Hendricks",
+	    "birthdayDate": "01-06-1986"
+	},
+	"result": {
+	    "idResult": "B71012P6823-PUIMA-/INRW",
+	    "dateOfResult": 1507884006000,
+	    "msg_type": "inr_simple2",
+	    "msg_raw": "Pvt 12/10/2017 à 10:00:00\nDossier 525648-P-6823\nINR: 2.6 \n Laboratoire Silicon Valley"
+	}
+    }
+]

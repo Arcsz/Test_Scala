@@ -2,5 +2,6 @@ GET        /                             controllers.HomeController.index
 
 # Results
 POST       /result                       controllers.ResultController.postResult
+GET        /result                       controllers.ResultController.getResult
 GET        /result/patient/:id           controllers.ResultController.getPatientResult(id: String)
 GET        /result/correspondent/:id     controllers.ResultController.getCorrespondentResult(id: String)
