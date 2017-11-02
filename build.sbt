@@ -19,6 +19,10 @@ libraryDependencies += "io.gatling" % "gatling-test-framework" % "2.2.2" % Test
 // https://mvnrepository.com/artifact/com.typesafe.play/play-json-joda_2.11
 libraryDependencies += "com.typesafe.play" % "play-json-joda_2.11" % "2.6.0-RC1"
 
+libraryDependencies ++= Seq(
+  ehcache
+)
+
 
 // The Play project itself
 lazy val root = (project in file("."))
