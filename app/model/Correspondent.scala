@@ -20,4 +20,12 @@ object Correspondent {
       (__ \ "lastName").read[String] and
       (__ \ "mobile").read[String]
     ) (Correspondent.apply _)
+
+  implicit val correspondentWrites: Writes[Correspondent] = (
+      (__ \ "idCorrespondent").write[String] and
+      (__ \ "profile").write[String] and
+      (__ \ "firstName").write[String] and
+      (__ \ "lastName").write[String] and
+      (__ \ "mobile").write[String]
+    ) (unlift(Correspondent.unapply))
 }

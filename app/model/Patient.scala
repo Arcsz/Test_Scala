@@ -3,7 +3,7 @@ package model
 import org.joda.time.DateTime
 
 case class Patient(
-  idPatient: String,
+  id: String,
   firstName: String,
   lastName: String,
   birthdayDate: DateTime
@@ -20,4 +20,11 @@ object Patient {
       (__ \ "lastName").read[String] and
       (__ \ "birthdayDate").read[DateTime](JodaReads.jodaDateReads("dd-MM-yyyy"))
     ) (Patient.apply _)
+
+  implicit val patientWrites: Writes[Patient] = (
+      (__ \ "idPatient").write[String] and
+      (__ \ "firstName").write[String] and
+      (__ \ "lastName").write[String] and
+      (__ \ "birthdayDate").write[DateTime](JodaWrites.jodaDateWrites("dd-MM-yyyy"))
+  ) (unlift(Patient.unapply))
 }

@@ -44,4 +44,33 @@ class ResultController @Inject()(cache: SyncCacheApi, cc: ControllerComponents) 
     }
   }
 
+
+  /**
+    * Route for GET request with patient id
+    * /result/patient/:id
+    * @param id
+    * @return Json array of result
+    */
+  def getPatientResult(id: String) = Action {
+    val database: Set[Result] = cache.get(Config.DATABASE_NAME).getOrElse(Set())
+
+    val patientResults = database.filter(res => res.patient.id == id)
+
+    Ok(Json.toJson(patientResults))
+  }
+
+
+  /**
+    * Route for GET request with correspondent id
+    * /result/correspondent/:id
+    * @param id
+    * @return Json array of result
+    */
+  def getCorrespondentResult(id: String) = Action {
+    val database: Set[Result] = cache.get(Config.DATABASE_NAME).getOrElse(Set())
+
+    val correspondentResults = database.filter(res => res.correspondent.id == id)
+
+    Ok(Json.toJson(correspondentResults))
+  }
 }
