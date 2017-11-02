@@ -1,11 +1,11 @@
 # Test_Scala
 
 Le projet se base sur le repository https://github.com/playframework/play-scala-rest-api-example.
-Le serveur se lance à l'adresse suivante: http://localhost:9000/ après avoir lancer le projet `sbt run`
+Le serveur se lance à l'adresse suivante: http://localhost:9000/ après avoir lancé le projet avec `sbt run`
 
 ## Envoi d'un résultat
 
-* Utilisation du script `./script/addResult.sh`
+* Utilisation du script `./script/addResult.sh` avec un fichier json contenant le résultat
 * EXEMPLE: `./script/addResult.sh ./script/json/multiple_result.json`
 
 ## Lecture de mes résultats (PATIENTS)
