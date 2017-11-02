@@ -1,2 +1,2 @@
 GET        /                       controllers.HomeController.index
-POST       /result                 controllers.ResultController.postResults
+POST       /result                 controllers.ResultController.postResult
